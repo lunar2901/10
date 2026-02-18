@@ -328,12 +328,21 @@ function getTypeText(v) {
 }
 
 function getForms(v) {
-  const present = v.present ?? v.prasens ?? v.präsens ?? v.forms?.present ?? v?.principalParts?.[0];
-  const past = v.past ?? v.prateritum ?? v.präteritum ?? v.forms?.past ?? v?.principalParts?.[1];
-  const partizip2 = v.partizip2 ?? v.partizipII ?? v.participle ?? v.pp ?? v.forms?.partizip2 ?? v?.principalParts?.[2];
-  const aux = v.aux ?? v.auxiliary ?? v.hilfsverb ?? v.forms?.aux;
+  // present may be an object {ich, du, er_sie_es, wir, ihr, sie_Sie} — extract ich-form
+  const presentRaw = v.present ?? v.prasens ?? v.präsens ?? v.forms?.present ?? v?.principalParts?.[0];
+  const presentIch = (presentRaw && typeof presentRaw === 'object') ? (presentRaw.ich || Object.values(presentRaw)[0] || '') : presentRaw;
 
-  let p = asText(present), pa = asText(past), pp = asText(partizip2), a = asText(aux);
+  // past_tenses object {präteritum, partizip_ii} — extract fields
+  const pastTenses = v.past_tenses || {};
+  const past     = v.past ?? v.prateritum ?? v.präteritum ?? pastTenses.präteritum ?? v.forms?.past ?? v?.principalParts?.[1];
+  const partizip2 = v.partizip2 ?? v.partizipII ?? v.participle ?? v.pp ?? pastTenses.partizip_ii ?? v.forms?.partizip2 ?? v?.principalParts?.[2];
+
+  // aux from auxiliaries array
+  const auxArr = Array.isArray(v.auxiliaries) ? v.auxiliaries : [];
+  const auxFromArr = auxArr[0]?.aux || '';
+  const aux = v.aux ?? v.auxiliary ?? v.hilfsverb ?? v.forms?.aux ?? auxFromArr;
+
+  let p = asText(presentIch), pa = asText(past), pp = asText(partizip2), a = asText(aux);
 
   const line = v.conjugationLine ?? v.conjugation ?? v.formsLine ?? v.principalPartsLine;
   if ((!p || p === '—') && line && typeof line === 'string') {
