@@ -1,266 +1,209 @@
-// adjectives-db-a1.js — A1 Beginner German Adjectives (comprehensive)
-const adjectivesA1 = [
+// adverbs-db-a1.js — A1 Beginner German Adverbs (comprehensive)
+const adverbsA1 = [
   {
-    "base": "groß", "level": "A1",
-    "comparison": { "positive": "groß", "comparative": "größer", "superlative_predicative": "am größten", "superlative_attributive": "größte" },
-    "irregular": true,
-    "declension_examples": { "strong": "großer (m)", "weak": "große (f)", "mixed": "großes (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["big", "large", "tall"],
-    "tip": "Comparative is irregular: groß → größer (umlaut). Used for both size and height.",
-    "examples": ["Das Haus ist groß.", "Er ist ein großer Mann.", "Berlin ist größer als Hamburg."]
+    "base": "hier", "level": "A1", "category": "place",
+    "translations": ["here"],
+    "tip": "Indicates the speaker's location. Opposite: dort/da (there).",
+    "examples": ["Ich wohne hier.", "Hier ist es schön.", "Bleib hier!"],
+    "position_rules": ["Usually in the middle field or at the start for emphasis."],
+    "example_positions": ["Hier bin ich.", "Ich bin hier."]
   },
   {
-    "base": "klein", "level": "A1",
-    "comparison": { "positive": "klein", "comparative": "kleiner", "superlative_predicative": "am kleinsten", "superlative_attributive": "kleinste" },
-    "irregular": false,
-    "declension_examples": { "strong": "kleiner (m)", "weak": "kleine (f)", "mixed": "kleines (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["small", "little", "short"],
-    "tip": "Opposite of groß. Used for both size and height of people.",
-    "examples": ["Die Katze ist klein.", "Er hat eine kleine Wohnung.", "Sie ist kleiner als ich."]
+    "base": "dort", "level": "A1", "category": "place",
+    "translations": ["there (further away)"],
+    "tip": "Indicates a place farther from the speaker. 'Da' is more colloquial and also means 'there'.",
+    "examples": ["Er wohnt dort.", "Dort ist das Museum.", "Kannst du dort warten?"],
+    "position_rules": ["Usually in the middle field or at the start for emphasis."],
+    "example_positions": ["Dort ist die Schule.", "Die Schule ist dort."]
   },
   {
-    "base": "gut", "level": "A1",
-    "comparison": { "positive": "gut", "comparative": "besser", "superlative_predicative": "am besten", "superlative_attributive": "beste" },
-    "irregular": true,
-    "declension_examples": { "strong": "guter (m)", "weak": "gute (f)", "mixed": "gutes (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["good", "well"],
-    "tip": "Highly irregular comparative and superlative: gut → besser → best-. Very common word.",
-    "common_mistakes": ["Don't say 'guter' predicatively. 'Das Essen ist gut' (not 'Das Essen ist gutes')."],
-    "examples": ["Das Essen ist gut.", "Er ist ein guter Freund.", "Diese Lösung ist besser.", "Das ist die beste Idee!"]
+    "base": "da", "level": "A1", "category": "place",
+    "translations": ["there", "here (colloq.)", "as (conjunction)"],
+    "tip": "Very common word with multiple uses: 'there' (place), 'here' (informal), or introduces a reason clause as conjunction.",
+    "examples": ["Schau mal da!", "Ich bin da.", "Da er krank ist, kommt er nicht."],
+    "position_rules": ["Flexible placement depending on the meaning used."],
+    "example_positions": ["Da ist der Bus!", "Er ist nicht da."]
   },
   {
-    "base": "schlecht", "level": "A1",
-    "comparison": { "positive": "schlecht", "comparative": "schlechter", "superlative_predicative": "am schlechtesten", "superlative_attributive": "schlechteste" },
-    "irregular": false,
-    "declension_examples": { "strong": "schlechter (m)", "weak": "schlechte (f)", "mixed": "schlechtes (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["bad", "poor", "badly"],
-    "tip": "Opposite of gut. 'Mir ist schlecht' = I feel sick/nauseous.",
-    "examples": ["Das Wetter ist schlecht.", "Das ist eine schlechte Idee.", "Er fühlt sich schlecht."]
+    "base": "jetzt", "level": "A1", "category": "time",
+    "translations": ["now"],
+    "tip": "Refers to the current moment. Contrast: 'gerade' (right now, in the process) vs 'jetzt' (now, at this point).",
+    "examples": ["Ich lerne jetzt Deutsch.", "Jetzt gehen wir!", "Was machst du jetzt?"],
+    "position_rules": ["Can appear in position 1 for emphasis or in the middle field."],
+    "example_positions": ["Jetzt machen wir eine Pause.", "Wir machen jetzt eine Pause."]
   },
   {
-    "base": "neu", "level": "A1",
-    "comparison": { "positive": "neu", "comparative": "neuer", "superlative_predicative": "am neuesten", "superlative_attributive": "neueste" },
-    "irregular": false,
-    "declension_examples": { "strong": "neuer (m)", "weak": "neue (f)", "mixed": "neues (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["new"],
-    "tip": "Very common in everyday speech. 'Neu' also means 'newly/recently' as an adverb.",
-    "examples": ["Er hat ein neues Auto.", "Das ist eine neue Idee.", "Was gibt es Neues?"]
+    "base": "heute", "level": "A1", "category": "time",
+    "translations": ["today"],
+    "tip": "Compounds: heute Morgen (this morning), heute Abend (this evening), heutzutage (nowadays).",
+    "examples": ["Heute ist Montag.", "Ich gehe heute ins Kino.", "Heute Abend koche ich."],
+    "position_rules": ["Often in position 1 or the middle field after the verb."],
+    "example_positions": ["Heute lerne ich.", "Ich lerne heute."]
   },
   {
-    "base": "alt", "level": "A1",
-    "comparison": { "positive": "alt", "comparative": "älter", "superlative_predicative": "am ältesten", "superlative_attributive": "älteste" },
-    "irregular": true,
-    "declension_examples": { "strong": "alter (m)", "weak": "alte (f)", "mixed": "altes (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["old", "aged"],
-    "tip": "Comparative with umlaut: alt → älter. Used for both age and objects. To ask age: 'Wie alt bist du?'",
-    "examples": ["Er ist sehr alt.", "Das ist ein altes Buch.", "Sie ist älter als ihr Bruder."]
+    "base": "morgen", "level": "A1", "category": "time",
+    "translations": ["tomorrow"],
+    "tip": "Also means 'morning' as a noun (der Morgen). Context distinguishes them. 'Morgen früh' = tomorrow morning.",
+    "common_mistakes": ["'Morgen' (adverb) = tomorrow. 'der Morgen' (noun) = morning. 'Guten Morgen!' = Good morning!"],
+    "examples": ["Morgen fahre ich nach Berlin.", "Bis morgen!", "Morgen früh arbeite ich."],
+    "position_rules": ["Often in position 1 for emphasis."],
+    "example_positions": ["Morgen kommt er.", "Er kommt morgen."]
   },
   {
-    "base": "jung", "level": "A1",
-    "comparison": { "positive": "jung", "comparative": "jünger", "superlative_predicative": "am jüngsten", "superlative_attributive": "jüngste" },
-    "irregular": true,
-    "declension_examples": { "strong": "junger (m)", "weak": "junge (f)", "mixed": "junges (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["young"],
-    "tip": "Comparative with umlaut: jung → jünger. Opposite of alt.",
-    "examples": ["Sie ist sehr jung.", "Das ist ein junger Mann.", "Ich bin jünger als du."]
+    "base": "gestern", "level": "A1", "category": "time",
+    "translations": ["yesterday"],
+    "tip": "Refers to the previous day. 'Gestern Abend' = yesterday evening.",
+    "examples": ["Gestern war ich krank.", "Ich habe gestern einen Film gesehen.", "Was hast du gestern gemacht?"],
+    "position_rules": ["Often in position 1 or the middle field."],
+    "example_positions": ["Gestern war ich müde.", "Ich war gestern müde."]
   },
   {
-    "base": "schön", "level": "A1",
-    "comparison": { "positive": "schön", "comparative": "schöner", "superlative_predicative": "am schönsten", "superlative_attributive": "schönste" },
-    "irregular": false,
-    "declension_examples": { "strong": "schöner (m)", "weak": "schöne (f)", "mixed": "schönes (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["beautiful", "pretty", "nice", "lovely"],
-    "tip": "Very versatile: beautiful (person/thing), nice (weather/day), good (time). 'Schönen Tag!' = Have a nice day!",
-    "examples": ["Das Wetter ist schön.", "Sie hat schöne Augen.", "Es war ein schöner Abend."]
+    "base": "immer", "level": "A1", "category": "time/frequency",
+    "translations": ["always"],
+    "tip": "'Immer' can intensify comparatives: 'immer größer' = bigger and bigger, 'immer mehr' = more and more.",
+    "examples": ["Ich trinke immer Kaffee zum Frühstück.", "Er ist immer freundlich.", "Das wird immer besser!"],
+    "position_rules": ["Usually in the middle field after the finite verb."],
+    "example_positions": ["Ich bin immer müde.", "Sie ist immer pünktlich."]
   },
   {
-    "base": "schnell", "level": "A1",
-    "comparison": { "positive": "schnell", "comparative": "schneller", "superlative_predicative": "am schnellsten", "superlative_attributive": "schnellste" },
-    "irregular": false,
-    "declension_examples": { "strong": "schneller (m)", "weak": "schnelle (f)", "mixed": "schnelles (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["fast", "quick", "quickly"],
-    "tip": "Used both attributively and adverbially. 'Schnell!' as an exclamation = Quickly!",
-    "examples": ["Das Auto fährt schnell.", "Er ist ein schneller Läufer.", "Komm schnell!"]
+    "base": "nie", "level": "A1", "category": "time/frequency",
+    "translations": ["never"],
+    "tip": "Negative frequency word. 'Noch nie' = never yet, never before. Position: after the verb, before adverbs.",
+    "examples": ["Ich trinke nie Alkohol.", "Er kommt nie pünktlich.", "Das habe ich noch nie gemacht."],
+    "position_rules": ["Usually in the middle field after the finite verb."],
+    "example_positions": ["Ich bin nie krank.", "Er kommt nie."]
   },
   {
-    "base": "langsam", "level": "A1",
-    "comparison": { "positive": "langsam", "comparative": "langsamer", "superlative_predicative": "am langsamsten", "superlative_attributive": "langsamste" },
-    "irregular": false,
-    "declension_examples": { "strong": "langsamer (m)", "weak": "langsame (f)", "mixed": "langsames (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["slow", "slowly"],
-    "tip": "Useful phrase: 'Sprechen Sie bitte langsamer!' = Please speak more slowly!",
-    "examples": ["Das Auto fährt langsam.", "Er ist ein langsamer Arbeiter.", "Bitte sprich langsamer!"]
+    "base": "oft", "level": "A1", "category": "time/frequency",
+    "translations": ["often", "frequently"],
+    "tip": "Comparative: öfter. 'Ich gehe oft ins Kino' = I often go to the cinema.",
+    "examples": ["Ich esse oft Pizza.", "Er ruft oft an.", "Wie oft lernst du Deutsch?"],
+    "position_rules": ["Usually in the middle field."],
+    "example_positions": ["Ich gehe oft spazieren.", "Er ist oft krank."]
   },
   {
-    "base": "teuer", "level": "A1",
-    "comparison": { "positive": "teuer", "comparative": "teurer", "superlative_predicative": "am teuersten", "superlative_attributive": "teuerste" },
-    "irregular": false,
-    "declension_examples": { "strong": "teurer (m)", "weak": "teure (f)", "mixed": "teures (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["expensive", "dear"],
-    "tip": "Drops -e- before endings: teuer → teure (not teuere). Opposite: günstig/billig (cheap).",
-    "common_mistakes": ["'Ein teures Auto' not 'ein teueres Auto'. The -e- in the stem drops."],
-    "examples": ["Das Restaurant ist teuer.", "Das ist ein teures Kleid.", "Berlin ist teurer als Leipzig."]
+    "base": "manchmal", "level": "A1", "category": "time/frequency",
+    "translations": ["sometimes"],
+    "tip": "Indicates occasional occurrence. Between 'oft' (often) and 'selten' (rarely).",
+    "examples": ["Ich esse manchmal Fastfood.", "Manchmal ist es schwer.", "Er kommt manchmal zu spät."],
+    "position_rules": ["Usually in position 1 for emphasis or in the middle field."],
+    "example_positions": ["Manchmal laufe ich.", "Ich laufe manchmal."]
   },
   {
-    "base": "billig", "level": "A1",
-    "comparison": { "positive": "billig", "comparative": "billiger", "superlative_predicative": "am billigsten", "superlative_attributive": "billigste" },
-    "irregular": false,
-    "declension_examples": { "strong": "billiger (m)", "weak": "billige (f)", "mixed": "billiges (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["cheap", "inexpensive"],
-    "tip": "Colloquially can imply low quality. More neutral: 'günstig' (affordable). 'Das ist billig!' can sound dismissive.",
-    "examples": ["Das Buch ist billig.", "Er kauft immer die billigsten Sachen.", "Das Hotel ist billiger als das andere."]
+    "base": "gern / gerne", "level": "A1", "category": "manner",
+    "translations": ["gladly", "with pleasure", "like to"],
+    "tip": "Used to express liking an activity. 'Ich esse gern Pizza' = I like eating pizza. Comparative: lieber. Superlative: am liebsten.",
+    "common_mistakes": ["Don't translate directly as 'I like pizza'. Use 'gern' with a verb: 'Ich esse gern Pizza' not 'Ich mag Pizza gern'."],
+    "examples": ["Ich lerne gern Deutsch.", "Er spielt gern Fußball.", "Was machst du am liebsten?"],
+    "position_rules": ["Usually after the object or at the end of the clause."],
+    "example_positions": ["Ich helfe gern.", "Ich esse gern Äpfel."]
   },
   {
-    "base": "interessant", "level": "A1",
-    "comparison": { "positive": "interessant", "comparative": "interessanter", "superlative_predicative": "am interessantesten", "superlative_attributive": "interessanteste" },
-    "irregular": false,
-    "declension_examples": { "strong": "interessanter (m)", "weak": "interessante (f)", "mixed": "interessantes (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["interesting"],
-    "tip": "Superlative adds -est- because the stem ends in -t: interessant-est-en.",
-    "examples": ["Das Buch ist sehr interessant.", "Er hat einen interessanten Beruf.", "Das finde ich interessant."]
+    "base": "sehr", "level": "A1", "category": "degree",
+    "translations": ["very", "very much"],
+    "tip": "Intensifier placed directly before the adjective or adverb it modifies. Also used with verbs: 'Ich mag das sehr.'",
+    "examples": ["Das ist sehr schön.", "Er ist sehr groß.", "Ich mag Schokolade sehr."],
+    "position_rules": ["Immediately before the adjective/adverb it modifies."],
+    "example_positions": ["Das Buch ist sehr interessant.", "Sie arbeitet sehr schnell."]
   },
   {
-    "base": "langweilig", "level": "A1",
-    "comparison": { "positive": "langweilig", "comparative": "langweiliger", "superlative_predicative": "am langweiligsten", "superlative_attributive": "langweiligste" },
-    "irregular": false,
-    "declension_examples": { "strong": "langweiliger (m)", "weak": "langweilige (f)", "mixed": "langweiliges (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["boring", "dull"],
-    "tip": "From 'lang' (long) + 'Weile' (while/time) — literally 'long-whiling'.",
-    "examples": ["Der Film ist langweilig.", "Das Buch finde ich langweilig.", "Mir ist langweilig."]
+    "base": "auch", "level": "A1", "category": "additive",
+    "translations": ["also", "too", "as well"],
+    "tip": "Position before the word it modifies: 'Ich auch!' (Me too!). 'Auch' can stand alone for emphasis.",
+    "examples": ["Ich komme auch.", "Das ist auch interessant.", "Er lernt auch Deutsch."],
+    "position_rules": ["Usually in the middle field, or in position 1 for contrast."],
+    "example_positions": ["Ich bin auch müde.", "Auch ich bin müde."]
   },
   {
-    "base": "kalt", "level": "A1",
-    "comparison": { "positive": "kalt", "comparative": "kälter", "superlative_predicative": "am kältesten", "superlative_attributive": "kälteste" },
-    "irregular": true,
-    "declension_examples": { "strong": "kalter (m)", "weak": "kalte (f)", "mixed": "kaltes (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["cold"],
-    "tip": "Comparative with umlaut: kalt → kälter. 'Mir ist kalt' = I am cold.",
-    "examples": ["Das Wasser ist kalt.", "Es ist ein kalter Tag.", "Mir ist kalt."]
+    "base": "noch", "level": "A1", "category": "time",
+    "translations": ["still", "yet"],
+    "tip": "Many uses: 'noch' = still (ongoing), 'noch nicht' = not yet, 'noch einmal' = once more/again.",
+    "common_mistakes": ["'Noch' vs 'schon': 'Bist du noch hier?' (Are you still here?) vs 'Bist du schon hier?' (Are you already here?)"],
+    "examples": ["Ich bin noch müde.", "Er ist noch nicht fertig.", "Noch einmal, bitte!"],
+    "position_rules": ["Usually in the middle field."],
+    "example_positions": ["Er schläft noch.", "Ich bin noch nicht fertig."]
   },
   {
-    "base": "warm", "level": "A1",
-    "comparison": { "positive": "warm", "comparative": "wärmer", "superlative_predicative": "am wärmsten", "superlative_attributive": "wärmste" },
-    "irregular": true,
-    "declension_examples": { "strong": "warmer (m)", "weak": "warme (f)", "mixed": "warmes (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["warm"],
-    "tip": "Comparative with umlaut: warm → wärmer. Used for weather and objects.",
-    "examples": ["Der Sommer ist warm.", "Sie trägt eine warme Jacke.", "Heute ist es wärmer."]
+    "base": "schon", "level": "A1", "category": "time",
+    "translations": ["already", "yet"],
+    "tip": "Indicates earlier-than-expected occurrence. 'Schon mal' = ever. 'Schon gut' = it's fine / never mind.",
+    "common_mistakes": ["'Schon' vs 'noch': 'Bist du schon fertig?' = Are you already done? vs 'Bist du noch nicht fertig?' = Aren't you done yet?"],
+    "examples": ["Ich bin schon müde.", "Hast du das schon gemacht?", "Warst du schon in Berlin?"],
+    "position_rules": ["Usually in the middle field."],
+    "example_positions": ["Er ist schon da.", "Ich habe das schon gehört."]
   },
   {
-    "base": "müde", "level": "A1",
-    "comparison": { "positive": "müde", "comparative": "müder", "superlative_predicative": "am müdesten", "superlative_attributive": "müdeste" },
-    "irregular": false,
-    "declension_examples": { "strong": "müder (m)", "weak": "müde (f)", "mixed": "müdes (n)" },
-    "position": ["predicative", "attributive"],
-    "translations": ["tired"],
-    "tip": "Very common for expressing tiredness. 'Ich bin so müde!' Superlative adds -est- (stem ends in -d).",
-    "examples": ["Ich bin sehr müde.", "Er sieht müde aus.", "Das müde Kind schläft ein."]
+    "base": "nicht", "level": "A1", "category": "negation",
+    "translations": ["not"],
+    "tip": "The main negation word. Position depends on what is negated. Negating verbs: usually near the end. Negating adjectives: directly before them.",
+    "common_mistakes": ["'Kein' negates nouns, 'nicht' negates everything else. 'Ich habe kein Auto' but 'Ich fahre nicht'."],
+    "examples": ["Ich verstehe das nicht.", "Er ist nicht groß.", "Das ist nicht richtig."],
+    "position_rules": ["At the end of the clause for verbs, directly before adjectives/adverbs."],
+    "example_positions": ["Ich komme nicht.", "Er ist nicht müde."]
   },
   {
-    "base": "hungrig", "level": "A1",
-    "comparison": { "positive": "hungrig", "comparative": "hungriger", "superlative_predicative": "am hungrigsten", "superlative_attributive": "hungrigste" },
-    "irregular": false,
-    "declension_examples": { "strong": "hungriger (m)", "weak": "hungrige (f)", "mixed": "hungriges (n)" },
-    "position": ["predicative", "attributive"],
-    "translations": ["hungry"],
-    "tip": "Also common: 'Ich habe Hunger' (I am hungry) — both forms are correct.",
-    "examples": ["Ich bin hungrig.", "Die Kinder sind immer hungrig.", "Bist du noch hungrig?"]
+    "base": "dann", "level": "A1", "category": "time",
+    "translations": ["then", "afterwards"],
+    "tip": "Used to show sequence of events. 'Erst... dann...' = first... then...",
+    "examples": ["Ich esse, dann gehe ich.", "Was machst du dann?", "Erst lerne ich, dann spiele ich."],
+    "position_rules": ["Usually in position 1 or middle field."],
+    "example_positions": ["Dann fahren wir nach Hause.", "Ich esse, dann gehe ich."]
   },
   {
-    "base": "glücklich", "level": "A1",
-    "comparison": { "positive": "glücklich", "comparative": "glücklicher", "superlative_predicative": "am glücklichsten", "superlative_attributive": "glücklichste" },
-    "irregular": false,
-    "declension_examples": { "strong": "glücklicher (m)", "weak": "glückliche (f)", "mixed": "glückliches (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["happy", "lucky"],
-    "tip": "Means both 'happy' and 'lucky'. Context matters. 'Glücklicherweise' = fortunately.",
-    "examples": ["Ich bin sehr glücklich.", "Sie hat ein glückliches Leben.", "Er ist das glücklichste Kind."]
+    "base": "bitte", "level": "A1", "category": "politeness",
+    "translations": ["please", "here you go", "you're welcome"],
+    "tip": "Multiple uses: 'please' in requests, 'here you are' when handing something, 'you're welcome' as a response to 'Danke'.",
+    "examples": ["Ein Kaffee, bitte.", "Bitte schön! — Danke schön!", "Bitte komm morgen."],
+    "position_rules": ["At the end of a request or beginning as a softener."],
+    "example_positions": ["Sprich bitte langsamer!", "Komm bitte herein."]
   },
   {
-    "base": "richtig", "level": "A1",
-    "comparison": { "positive": "richtig", "comparative": "richtiger", "superlative_predicative": "am richtigsten", "superlative_attributive": "richtigste" },
-    "irregular": false,
-    "declension_examples": { "strong": "richtiger (m)", "weak": "richtige (f)", "mixed": "richtiges (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["correct", "right", "proper"],
-    "tip": "Used colloquially to intensify: 'Das ist richtig gut!' = That's really good!",
-    "examples": ["Das ist richtig.", "Ist das die richtige Antwort?", "Ich habe die richtige Entscheidung getroffen."]
+    "base": "ja", "level": "A1", "category": "affirmation",
+    "translations": ["yes", "indeed", "of course"],
+    "tip": "Besides 'yes', 'ja' is a modal particle with many nuances: surprise, emphasis, shared knowledge. 'Das ist ja toll!' = That is indeed great!",
+    "examples": ["Ja, ich komme.", "Das weiß ich ja.", "Ja, natürlich!"],
+    "position_rules": ["As modal particle: in the middle field after the verb."],
+    "example_positions": ["Ja, das stimmt.", "Das ist ja interessant."]
   },
   {
-    "base": "falsch", "level": "A1",
-    "comparison": { "positive": "falsch", "comparative": "falscher", "superlative_predicative": "am falschesten", "superlative_attributive": "falscheste" },
-    "irregular": false,
-    "declension_examples": { "strong": "falscher (m)", "weak": "falsche (f)", "mixed": "falsches (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["wrong", "false", "incorrect"],
-    "tip": "Opposite of richtig. 'Das ist falsch!' Also means 'fake': 'eine falsche Nummer' (wrong number).",
-    "examples": ["Das ist falsch.", "Er hat die falsche Antwort.", "Du hast die falsche Nummer gewählt."]
+    "base": "nein", "level": "A1", "category": "negation",
+    "translations": ["no"],
+    "tip": "Direct negation. Often softened with 'nein, danke' or 'nein, leider nicht'.",
+    "examples": ["Nein, das ist falsch.", "Nein, danke.", "Nein, ich komme nicht."],
+    "position_rules": ["Usually at the start of an answer."],
+    "example_positions": ["Nein, ich will nicht.", "Nein, danke!"]
   },
   {
-    "base": "laut", "level": "A1",
-    "comparison": { "positive": "laut", "comparative": "lauter", "superlative_predicative": "am lautesten", "superlative_attributive": "lauteste" },
-    "irregular": false,
-    "declension_examples": { "strong": "lauter (m)", "weak": "laute (f)", "mixed": "lautes (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["loud", "noisy"],
-    "tip": "Opposite: leise (quiet). Also used as preposition: 'laut dem Bericht' (according to the report).",
-    "examples": ["Die Musik ist zu laut.", "Er hat eine laute Stimme.", "Sprich nicht so laut!"]
+    "base": "vielleicht", "level": "A1", "category": "modal",
+    "translations": ["maybe", "perhaps"],
+    "tip": "Expresses uncertainty. 'Vielleicht komme ich' = Maybe I'll come. Also used to soften requests: 'Können Sie vielleicht helfen?'",
+    "examples": ["Vielleicht komme ich morgen.", "Das ist vielleicht eine gute Idee.", "Er ist vielleicht krank."],
+    "position_rules": ["Can be in position 1 for emphasis or in the middle field."],
+    "example_positions": ["Vielleicht regnet es morgen.", "Er kommt vielleicht nicht."]
   },
   {
-    "base": "leise", "level": "A1",
-    "comparison": { "positive": "leise", "comparative": "leiser", "superlative_predicative": "am leisesten", "superlative_attributive": "leiseste" },
-    "irregular": false,
-    "declension_examples": { "strong": "leiser (m)", "weak": "leise (f)", "mixed": "leises (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["quiet", "soft", "softly"],
-    "tip": "Opposite of laut. 'Sei leise!' = Be quiet! Used for sounds and voices.",
-    "examples": ["Sei bitte leise!", "Er spricht leise.", "Das ist ein leises Geräusch."]
+    "base": "leider", "level": "A1", "category": "modal",
+    "translations": ["unfortunately"],
+    "tip": "Expresses regret. Very useful for polite refusals: 'Leider kann ich nicht kommen.' = Unfortunately, I can't come.",
+    "examples": ["Leider habe ich keine Zeit.", "Er kommt leider nicht.", "Das ist leider falsch."],
+    "position_rules": ["Usually in position 1 or middle field."],
+    "example_positions": ["Leider kann ich nicht.", "Ich kann leider nicht kommen."]
   },
   {
-    "base": "frei", "level": "A1",
-    "comparison": { "positive": "frei", "comparative": "freier", "superlative_predicative": "am freisten", "superlative_attributive": "freiste" },
-    "irregular": false,
-    "declension_examples": { "strong": "freier (m)", "weak": "freie (f)", "mixed": "freies (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["free", "available", "vacant"],
-    "tip": "Means both 'free' (liberty) and 'available/vacant'. 'Ist hier noch frei?' = Is this seat available?",
-    "examples": ["Ist dieser Platz frei?", "Ich habe heute frei.", "Das ist ein freies Land."]
+    "base": "zusammen", "level": "A1", "category": "manner",
+    "translations": ["together"],
+    "tip": "Also forms separable verb prefixes: zusammenarbeiten (to work together), zusammenkommen (to meet).",
+    "examples": ["Wir essen zusammen.", "Kommt ihr zusammen?", "Lass uns zusammen lernen."],
+    "position_rules": ["Usually at the end of the clause or after the verb."],
+    "example_positions": ["Wir fahren zusammen.", "Können wir das zusammen machen?"]
   },
   {
-    "base": "schwer", "level": "A1",
-    "comparison": { "positive": "schwer", "comparative": "schwerer", "superlative_predicative": "am schwersten", "superlative_attributive": "schwerste" },
-    "irregular": false,
-    "declension_examples": { "strong": "schwerer (m)", "weak": "schwere (f)", "mixed": "schweres (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["heavy", "difficult", "hard"],
-    "tip": "Means both 'heavy' (weight) and 'difficult'. Context determines meaning.",
-    "examples": ["Diese Tasche ist schwer.", "Deutsch ist schwer.", "Das ist eine schwere Aufgabe."]
-  },
-  {
-    "base": "einfach", "level": "A1",
-    "comparison": { "positive": "einfach", "comparative": "einfacher", "superlative_predicative": "am einfachsten", "superlative_attributive": "einfachste" },
-    "irregular": false,
-    "declension_examples": { "strong": "einfacher (m)", "weak": "einfache (f)", "mixed": "einfaches (n)" },
-    "position": ["attributive", "predicative", "adverbial"],
-    "translations": ["easy", "simple", "just"],
-    "tip": "Also used as intensifier/filler: 'Das ist einfach schön!' = That's just beautiful! Also: single (ticket).",
-    "examples": ["Die Übung ist einfach.", "Einmal Hamburg, einfach, bitte.", "Das ist einfach wunderbar!"]
+    "base": "natürlich", "level": "A1", "category": "modal",
+    "translations": ["naturally", "of course"],
+    "tip": "Very common in conversation to express agreement or obviousness. 'Natürlich!' = Of course!",
+    "examples": ["Natürlich komme ich!", "Er kann natürlich Deutsch.", "Das ist natürlich richtig."],
+    "position_rules": ["Often in position 1 or middle field."],
+    "example_positions": ["Natürlich helfe ich dir.", "Das ist natürlich möglich."]
   }
 ];
-export default adjectivesA1;
+export default adverbsA1;

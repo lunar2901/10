@@ -1,367 +1,145 @@
-// adverbs-db-c1.js
+// adverbs-db-c1.js — C1 Advanced German Adverbs (comprehensive)
 const adverbsC1 = [
   {
-    "base": "folglich",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "consequently"
-    ],
-    "examples": [
-      "Er war krank, folglich blieb er zu Hause.",
-      "Die Zahlen sind schlecht, folglich müssen wir sparen.",
-      "Sie lernte intensiv, folglich bestand sie."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Er war krank, folglich blieb er zu Hause.",
-      "Die Zahlen sind schlecht, folglich müssen wir sparen."
-    ]
+    "base": "gleichwohl", "level": "C1", "category": "concessive",
+    "translations": ["nevertheless", "nonetheless", "yet"],
+    "tip": "Formal/written synonym for 'trotzdem' / 'dennoch'. Concedes a point but introduces a counter-argument.",
+    "register": "formal/written",
+    "examples": ["Das Problem ist real; gleichwohl muss man weitermachen.", "Die Kritik ist berechtigt. Gleichwohl bleibt das Projekt wichtig."],
+    "position_rules": ["Often at the start of a new clause or sentence to signal contrast."],
+    "example_positions": ["Gleichwohl hält er an seiner Meinung fest.", "Das ist schwierig, gleichwohl machbar."]
   },
   {
-    "base": "demnach",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "accordingly"
-    ],
-    "examples": [
-      "Er hat viel gelernt, demnach ist er vorbereitet.",
-      "Es regnet, demnach bleiben wir drinnen.",
-      "Sie war krank, demnach fehlte sie."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Er hat viel gelernt, demnach ist er vorbereitet.",
-      "Es regnet, demnach bleiben wir drinnen."
-    ]
+    "base": "demzufolge", "level": "C1", "category": "consecutive",
+    "translations": ["consequently", "therefore", "as a result"],
+    "tip": "Formal connective: 'demnach' is similar but 'demzufolge' emphasizes logical consequence. Triggers verb-second order.",
+    "register": "formal/written",
+    "examples": ["Es fehlten Beweise. Demzufolge wurde er freigesprochen.", "Die Nachfrage sank. Demzufolge sanken auch die Preise."],
+    "position_rules": ["Used in position 1, causing verb-subject inversion."],
+    "example_positions": ["Demzufolge gelten neue Regeln.", "Er ist krank; demzufolge fehlt er."]
   },
   {
-    "base": "letztlich",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "ultimately"
-    ],
-    "examples": [
-      "Letztlich entscheidet das Team.",
-      "Letztlich war es die richtige Wahl.",
-      "Letztlich zählt die Qualität."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Letztlich entscheidet das Team.",
-      "Letztlich war es die richtige Wahl."
-    ]
+    "base": "infolgedessen", "level": "C1", "category": "consecutive",
+    "translations": ["as a consequence", "as a result thereof"],
+    "tip": "Very formal. More specific than 'deshalb': emphasizes that what follows is a direct result of what was said.",
+    "register": "formal/written",
+    "examples": ["Das Experiment scheiterte. Infolgedessen wurden weitere Studien angeordnet.", "Er verletzte die Regeln und wurde infolgedessen suspendiert."],
+    "position_rules": ["Used in position 1 or after semicolons in formal text."],
+    "example_positions": ["Infolgedessen musste er zurücktreten.", "Das Projekt verzögerte sich, infolgedessen stiegen die Kosten."]
   },
   {
-    "base": "zugleich",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "at the same time"
-    ],
-    "examples": [
-      "Er ist Chef und zugleich Mentor.",
-      "Sie lachte und weinte zugleich.",
-      "Das ist schwierig und zugleich spannend."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Er ist Chef und zugleich Mentor.",
-      "Sie lachte und weinte zugleich."
-    ]
+    "base": "überdies", "level": "C1", "category": "additive",
+    "translations": ["moreover", "furthermore", "besides"],
+    "tip": "Formal additive: adds a further argument. Synonyms: 'außerdem', 'darüber hinaus'. 'Überdies' is most literary.",
+    "register": "formal/written",
+    "examples": ["Er ist kompetent. Überdies ist er sehr zuverlässig.", "Das Projekt ist teuer, überdies ist die Qualität fragwürdig."],
+    "position_rules": ["Usually in position 1 at the beginning of a sentence."],
+    "example_positions": ["Überdies ist er pünktlich.", "Das ist falsch; überdies ist es gefährlich."]
   },
   {
-    "base": "mitunter",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "sometimes"
-    ],
-    "examples": [
-      "Mitunter ist es schwer, objektiv zu bleiben.",
-      "Mitunter passieren Fehler.",
-      "Mitunter hilft ein Perspektivwechsel."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Mitunter ist es schwer, objektiv zu bleiben.",
-      "Mitunter passieren Fehler."
-    ]
+    "base": "nichtsdestotrotz", "level": "C1", "category": "concessive",
+    "translations": ["nevertheless", "nonetheless"],
+    "tip": "Long but very expressive. Colloquially 'nichtsdestoweniger'. Often used in writing and speeches.",
+    "register": "formal/spoken",
+    "examples": ["Er ist erschöpft; nichtsdestotrotz setzt er seine Arbeit fort.", "Nichtsdestotrotz bin ich der Meinung, dass..."],
+    "position_rules": ["Usually in position 1 or after semicolons."],
+    "example_positions": ["Nichtsdestotrotz bleibt es unsere Pflicht.", "Das Problem ist groß; nichtsdestotrotz haben wir Lösungen."]
   },
   {
-    "base": "allenfalls",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "at most"
-    ],
-    "examples": [
-      "Das ist allenfalls eine Übergangslösung.",
-      "Allenfalls ein kleiner Fehler ist passiert.",
-      "Allenfalls morgen kann ich kommen."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Das ist allenfalls eine Übergangslösung.",
-      "Allenfalls ein kleiner Fehler ist passiert."
-    ]
+    "base": "freilich", "level": "C1", "category": "concessive",
+    "translations": ["of course", "admittedly", "certainly (but...)"],
+    "tip": "Southern German/Austrian usage common. Can concede a point: 'freilich, aber...' = 'admittedly, but...'",
+    "register": "formal/regional",
+    "examples": ["Das ist freilich richtig, aber...", "Freilich hat er Recht damit.", "Das geht freilich nicht so einfach."],
+    "position_rules": ["Can be in position 1 or middle field."],
+    "example_positions": ["Freilich haben wir das gewusst.", "Das stimmt freilich."]
   },
   {
-    "base": "sukzessive",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "gradually"
-    ],
-    "examples": [
-      "Wir verbessern den Prozess sukzessive.",
-      "Die Kosten steigen sukzessive.",
-      "Sukzessive wird das System stabiler."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Wir verbessern den Prozess sukzessive.",
-      "Die Kosten steigen sukzessive."
-    ]
+    "base": "hingegen", "level": "C1", "category": "adversative",
+    "translations": ["on the other hand", "in contrast", "however"],
+    "tip": "More formal than 'aber' for contrast. Sets up a clear contrast between two situations. Triggers verb inversion.",
+    "register": "formal/written",
+    "examples": ["Er befürwortet die Reform. Sein Kollege hingegen lehnt sie ab.", "Das erste Modell scheiterte; das zweite hingegen war erfolgreich."],
+    "position_rules": ["Usually after the subject or in position 1 with verb inversion."],
+    "example_positions": ["Er ist reich; sie hingegen hat nichts.", "Das Projekt ist teuer, der Nutzen hingegen gering."]
   },
   {
-    "base": "in erster Linie",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "primarily"
-    ],
-    "examples": [
-      "In erster Linie zählt Qualität.",
-      "In erster Linie geht es um Sicherheit.",
-      "In erster Linie müssen wir planen."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "In erster Linie zählt Qualität.",
-      "In erster Linie geht es um Sicherheit."
-    ]
+    "base": "keineswegs", "level": "C1", "category": "negation",
+    "translations": ["by no means", "not at all", "in no way"],
+    "tip": "Strong emphatic negation. More formal than 'überhaupt nicht'. 'Das stimmt keineswegs' = That is by no means true.",
+    "register": "formal",
+    "examples": ["Das ist keineswegs selbstverständlich.", "Er ist keineswegs unschuldig.", "Keineswegs bin ich damit einverstanden."],
+    "position_rules": ["Can be in position 1 for emphasis or in the middle field."],
+    "example_positions": ["Keineswegs ist das einfach.", "Das war keineswegs meine Absicht."]
   },
   {
-    "base": "maßgeblich",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "significantly",
-      "decisively"
-    ],
-    "examples": [
-      "Er hat maßgeblich dazu beigetragen.",
-      "Das Ergebnis hängt maßgeblich von Daten ab.",
-      "Maßgeblich ist die Umsetzung."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Er hat maßgeblich dazu beigetragen.",
-      "Das Ergebnis hängt maßgeblich von Daten ab."
-    ]
+    "base": "wenngleich", "level": "C1", "category": "concessive",
+    "translations": ["even though", "although"],
+    "tip": "Formal conjunction/adverb for concession. More literary than 'obwohl'. 'Wenngleich es stimmt,...' = Even though it is true,...",
+    "register": "formal/literary",
+    "examples": ["Wenngleich er krank war, erschien er zur Sitzung.", "Das ist wahr, wenngleich unangenehm."],
+    "position_rules": ["Introduces a subordinate clause (verb at end) or can modify predicatively."],
+    "example_positions": ["Wenngleich er erschöpft war, hörte er zu.", "Das Ergebnis ist, wenngleich unerwartet, positiv."]
   },
   {
-    "base": "ausnahmslos",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "without exception"
-    ],
-    "examples": [
-      "Die Regeln gelten ausnahmslos.",
-      "Ausnahmslos alle müssen zustimmen.",
-      "Wir halten uns ausnahmslos daran."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Die Regeln gelten ausnahmslos.",
-      "Ausnahmslos alle müssen zustimmen."
-    ]
+    "base": "mitunter", "level": "C1", "category": "frequency",
+    "translations": ["sometimes", "occasionally", "at times"],
+    "tip": "More literary/formal than 'manchmal'. Implies somewhat irregular, notable occurrences.",
+    "register": "formal/literary",
+    "examples": ["Das kann mitunter sehr schwierig sein.", "Mitunter gibt es Ausnahmen.", "Er ist mitunter unberechenbar."],
+    "position_rules": ["Usually in the middle field."],
+    "example_positions": ["Das passiert mitunter.", "Mitunter braucht man Geduld."]
   },
   {
-    "base": "unweigerlich",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "inevitably"
-    ],
-    "examples": [
-      "Ohne Planung kommt es unweigerlich zu Fehlern.",
-      "Das führt unweigerlich zu Konflikten.",
-      "Unweigerlich entstehen Kosten."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Ohne Planung kommt es unweigerlich zu Fehlern.",
-      "Das führt unweigerlich zu Konflikten."
-    ]
+    "base": "sicherlich", "level": "C1", "category": "modal",
+    "translations": ["certainly", "surely", "no doubt"],
+    "tip": "Epistemic: the speaker expresses high confidence. 'Er wird sicherlich kommen' = He will certainly come.",
+    "examples": ["Das ist sicherlich richtig.", "Sicherlich wird er erfolgreich sein.", "Das hat sicherlich seine Gründe."],
+    "position_rules": ["Usually in the middle field or position 1."],
+    "example_positions": ["Sicherlich hat er Recht.", "Er kommt sicherlich bald."]
   },
   {
-    "base": "einerseits",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "on the one hand"
-    ],
-    "examples": [
-      "Einerseits ist es teuer, andererseits nützlich.",
-      "Einerseits verstehe ich dich, andererseits nicht.",
-      "Einerseits braucht es Zeit, andererseits Geduld."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Einerseits ist es teuer, andererseits nützlich.",
-      "Einerseits verstehe ich dich, andererseits nicht."
-    ]
+    "base": "ausgerechnet", "level": "C1", "category": "focus",
+    "translations": ["of all things", "of all people", "precisely"],
+    "tip": "Expresses surprise or irony: of all the possibilities, this one? 'Ausgerechnet jetzt!' = Right now, of all times!",
+    "examples": ["Ausgerechnet er soll das getan haben?", "Warum ausgerechnet heute?", "Sie hat ausgerechnet mich gefragt."],
+    "position_rules": ["Directly before the focused word."],
+    "example_positions": ["Ausgerechnet heute kommt Besuch.", "Er fragt ausgerechnet mich."]
   },
   {
-    "base": "andererseits",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "on the other hand"
-    ],
-    "examples": [
-      "Andererseits ist es eine Chance.",
-      "Andererseits gibt es Alternativen.",
-      "Andererseits ist das Risiko hoch."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Andererseits ist es eine Chance.",
-      "Andererseits gibt es Alternativen."
-    ]
+    "base": "unbedingt", "level": "C1", "category": "degree",
+    "translations": ["absolutely", "by all means", "definitely", "unconditionally"],
+    "tip": "'Unbedingt!' as exclamation = Absolutely! By all means! 'Das musst du unbedingt sehen' = You absolutely must see this.",
+    "examples": ["Ich muss das unbedingt lesen.", "Das ist nicht unbedingt richtig.", "Komm unbedingt!"],
+    "position_rules": ["Usually in the middle field before the focused word."],
+    "example_positions": ["Das ist nicht unbedingt notwendig.", "Ich will ihn unbedingt sehen."]
   },
   {
-    "base": "im Übrigen",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "incidentally",
-      "besides"
-    ],
-    "examples": [
-      "Im Übrigen bin ich einverstanden.",
-      "Im Übrigen war das Meeting gut.",
-      "Im Übrigen ist das nicht relevant."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Im Übrigen bin ich einverstanden.",
-      "Im Übrigen war das Meeting gut."
-    ]
+    "base": "schlechthin", "level": "C1", "category": "degree",
+    "translations": ["par excellence", "as such", "absolutely", "the very embodiment of"],
+    "tip": "Used to define something as the prime or definitive example: 'Das Wort schlechthin' = the word par excellence.",
+    "register": "formal/academic",
+    "examples": ["Er ist das Genie schlechthin.", "Das ist der Fehler schlechthin.", "Beethoven ist der Komponist schlechthin."],
+    "position_rules": ["Placed after the noun or adjective it modifies."],
+    "example_positions": ["Er ist der Experte schlechthin.", "Das ist das Problem schlechthin."]
   },
   {
-    "base": "schlichtweg",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "simply",
-      "plainly"
-    ],
-    "examples": [
-      "Das ist schlichtweg falsch.",
-      "Ich habe schlichtweg keine Zeit.",
-      "Schlichtweg fehlt die Grundlage."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Das ist schlichtweg falsch.",
-      "Ich habe schlichtweg keine Zeit."
-    ]
+    "base": "gar", "level": "C1", "category": "degree",
+    "translations": ["at all", "even", "indeed (emphatic)"],
+    "tip": "Emphatic particle. 'Gar nicht' = not at all. 'Gar nichts' = nothing whatsoever. 'Oder gar...' = or even...",
+    "common_mistakes": ["'Gar nicht' is stronger than 'nicht'. 'Das macht mir gar nichts aus' = That doesn't bother me at all."],
+    "examples": ["Das stört mich gar nicht.", "Er hat gar nichts gesagt.", "Oder gar schlimmer?"],
+    "position_rules": ["Used directly before the element it intensifies."],
+    "example_positions": ["Das interessiert mich gar nicht.", "Er weiß gar nichts davon."]
   },
   {
-    "base": "mitnichten",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "by no means"
-    ],
-    "examples": [
-      "Das ist mitnichten sicher.",
-      "Er ist mitnichten verantwortlich.",
-      "Mitnichten stimmt das."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Das ist mitnichten sicher.",
-      "Er ist mitnichten verantwortlich."
-    ]
-  },
-  {
-    "base": "allen Ernstes",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "seriously"
-    ],
-    "examples": [
-      "Meinst du das allen Ernstes?",
-      "Er behauptet das allen Ernstes.",
-      "Allen Ernstes: Das ist riskant."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Meinst du das allen Ernstes?",
-      "Er behauptet das allen Ernstes."
-    ]
-  },
-  {
-    "base": "beileibe",
-    "level": "C1",
-    "category": "general",
-    "translations": [
-      "far from"
-    ],
-    "examples": [
-      "Das ist beileibe nicht einfach.",
-      "Er ist beileibe kein Experte.",
-      "Beileibe nicht alles ist geklärt."
-    ],
-    "position_rules": [
-      "Usually in the middle field; can be moved to position 1 for emphasis."
-    ],
-    "example_positions": [
-      "Das ist beileibe nicht einfach.",
-      "Er ist beileibe kein Experte."
-    ]
+    "base": "wiederum", "level": "C1", "category": "adversative",
+    "translations": ["in turn", "on the other hand", "again"],
+    "tip": "Signals a return or flip to a contrasting perspective. 'Das wiederum bedeutet...' = That in turn means...",
+    "register": "formal",
+    "examples": ["Das führt wiederum zu neuen Fragen.", "Er wiederum ist anderer Meinung.", "Das hat wiederum Folgen."],
+    "position_rules": ["Usually in position 1 or after subject."],
+    "example_positions": ["Das wiederum ist interessant.", "Wiederum stellt sich die Frage..."]
   }
 ];
 export default adverbsC1;

@@ -1,1142 +1,125 @@
-// adjectives-db-b2.js
+// adjectives-db-b2.js — B2 Upper-Intermediate German Adjectives (comprehensive)
 const adjectivesB2 = [
   {
-    "base": "anspruchsvoll",
-    "level": "B2",
-    "comparison": {
-      "positive": "anspruchsvoll",
-      "comparative": "anspruchsvoller",
-      "superlative_predicative": "am anspruchsvollsten",
-      "superlative_attributive": "anspruchsvollste"
-    },
+    "base": "erheblich", "level": "B2",
+    "comparison": { "positive": "erheblich", "comparative": "erheblicher", "superlative_predicative": "am erheblichsten", "superlative_attributive": "erheblichste" },
     "irregular": false,
-    "declension_examples": {
-      "strong": "anspruchsvoller",
-      "weak": "anspruchsvolle",
-      "mixed": "anspruchsvoller"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "demanding",
-      "challenging"
-    ],
-    "examples": [
-      "Der Kurs ist anspruchsvoll.",
-      "Die Aufgabe wird anspruchsvoller.",
-      "Am anspruchsvollsten ist das Schreiben."
-    ]
+    "declension_examples": { "strong": "erheblicher (m)", "weak": "erhebliche (f)", "mixed": "erhebliches (n)" },
+    "position": ["attributive", "predicative", "adverbial"],
+    "translations": ["considerable", "significant", "substantial"],
+    "tip": "Formal/academic register. Synonym: beträchtlich, bedeutend. 'Erheblich besser' = considerably better.",
+    "examples": ["Das ist ein erheblicher Unterschied.", "Die Kosten sind erheblich gestiegen.", "Er hat erhebliche Fortschritte gemacht."]
   },
   {
-    "base": "ausführlich",
-    "level": "B2",
-    "comparison": {
-      "positive": "ausführlich",
-      "comparative": "ausführlicher",
-      "superlative_predicative": "am ausführlichsten",
-      "superlative_attributive": "ausführlichste"
-    },
-    "irregular": true,
-    "declension_examples": {
-      "strong": "ausführlicher",
-      "weak": "ausführliche",
-      "mixed": "ausführlicher"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "detailed"
-    ],
-    "examples": [
-      "Bitte gib eine ausführliche Antwort.",
-      "Der Bericht ist ausführlicher als erwartet.",
-      "Am ausführlichsten erklärt sie das Thema."
-    ]
-  },
-  {
-    "base": "effektiv",
-    "level": "B2",
-    "comparison": {
-      "positive": "effektiv",
-      "comparative": "effektiver",
-      "superlative_predicative": "am effektivsten",
-      "superlative_attributive": "effektivste"
-    },
+    "base": "sachlich", "level": "B2",
+    "comparison": { "positive": "sachlich", "comparative": "sachlicher", "superlative_predicative": "am sachlichsten", "superlative_attributive": "sachlichste" },
     "irregular": false,
-    "declension_examples": {
-      "strong": "effektiver",
-      "weak": "effektive",
-      "mixed": "effektiver"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "effective"
-    ],
-    "examples": [
-      "Das Training ist effektiv.",
-      "Eine effektivere Methode spart Zeit.",
-      "Am effektivsten ist regelmäßiges Üben."
-    ]
+    "declension_examples": { "strong": "sachlicher (m)", "weak": "sachliche (f)", "mixed": "sachliches (n)" },
+    "position": ["attributive", "predicative", "adverbial"],
+    "translations": ["factual", "objective", "matter-of-fact"],
+    "tip": "Important in academic and professional contexts. 'Bleib sachlich!' = Stay objective! Opposite: emotional, subjektiv.",
+    "examples": ["Bleib bitte sachlich.", "Er gibt eine sachliche Einschätzung.", "Das ist ein sachlicher Bericht."]
   },
   {
-    "base": "realistisch",
-    "level": "B2",
-    "comparison": {
-      "positive": "realistisch",
-      "comparative": "realistischer",
-      "superlative_predicative": "am realistischsten",
-      "superlative_attributive": "realistischste"
-    },
+    "base": "nachhaltig", "level": "B2",
+    "comparison": { "positive": "nachhaltig", "comparative": "nachhaltiger", "superlative_predicative": "am nachhaltigsten", "superlative_attributive": "nachhaltigste" },
     "irregular": false,
-    "declension_examples": {
-      "strong": "realistischer",
-      "weak": "realistische",
-      "mixed": "realistischer"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "realistic"
-    ],
-    "examples": [
-      "Der Plan ist realistisch.",
-      "Seine Erwartungen sind realistischer.",
-      "Am realistischsten ist eine kleine Änderung."
-    ],
-    "variants": [
-      {
-        "base": "unrealistisch",
-        "level": "b2",
-        "type": "negation",
-        "prefix": "un",
-        "translations": [
-          "unrealistic"
-        ]
-      }
-    ]
+    "declension_examples": { "strong": "nachhaltiger (m)", "weak": "nachhaltige (f)", "mixed": "nachhaltiges (n)" },
+    "position": ["attributive", "predicative", "adverbial"],
+    "translations": ["sustainable", "lasting"],
+    "tip": "Very trendy word in contemporary German. 'Nachhaltige Entwicklung' = sustainable development. Also means 'lasting' (impact).",
+    "collocations": ["nachhaltige Entwicklung", "nachhaltig wirtschaften", "nachhaltiger Eindruck"],
+    "examples": ["Wir brauchen eine nachhaltige Lösung.", "Das hat einen nachhaltigen Eindruck hinterlassen.", "Nachhaltige Produkte sind teurer."]
   },
   {
-    "base": "unrealistisch",
-    "level": "B2",
-    "comparison": {
-      "positive": "unrealistisch",
-      "comparative": "unrealistischer",
-      "superlative_predicative": "am unrealistischsten",
-      "superlative_attributive": "unrealistischste"
-    },
+    "base": "ausreichend", "level": "B2",
+    "comparison": { "positive": "ausreichend", "comparative": "ausreichender", "superlative_predicative": "am ausreichendsten", "superlative_attributive": "ausreichendste" },
     "irregular": false,
-    "declension_examples": {
-      "strong": "unrealistischer",
-      "weak": "unrealistische",
-      "mixed": "unrealistischer"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "unrealistic"
-    ],
-    "examples": [
-      "Das ist unrealistisch.",
-      "Das Ziel wirkt unrealistischer als früher.",
-      "Am unrealistischsten sind leere Versprechen."
-    ],
-    "derived_from": {
-      "base": "realistisch",
-      "level": "b2",
-      "type": "negation",
-      "prefix": "un"
-    }
+    "declension_examples": { "strong": "ausreichender (m)", "weak": "ausreichende (f)", "mixed": "ausreichendes (n)" },
+    "position": ["attributive", "predicative", "adverbial"],
+    "translations": ["sufficient", "adequate", "enough"],
+    "tip": "More formal than 'genug'. Used in official/academic contexts. Also a school grade in Germany (D grade: barely passing).",
+    "examples": ["Die Mittel sind ausreichend.", "Das reicht nicht aus.", "Er hat ausreichende Kenntnisse."]
   },
   {
-    "base": "konkret",
-    "level": "B2",
-    "comparison": {
-      "positive": "konkret",
-      "comparative": "konkreter",
-      "superlative_predicative": "am konkretesten",
-      "superlative_attributive": "konkreteste"
-    },
+    "base": "umfangreich", "level": "B2",
+    "comparison": { "positive": "umfangreich", "comparative": "umfangreicher", "superlative_predicative": "am umfangreichsten", "superlative_attributive": "umfangreichste" },
     "irregular": false,
-    "declension_examples": {
-      "strong": "konkreter",
-      "weak": "konkrete",
-      "mixed": "konkreter"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "concrete",
-      "specific"
-    ],
-    "examples": [
-      "Bitte werde konkreter.",
-      "Wir brauchen konkrete Beispiele.",
-      "Am konkretesten sind Zahlen und Daten."
-    ]
+    "declension_examples": { "strong": "umfangreicher (m)", "weak": "umfangreiche (f)", "mixed": "umfangreiches (n)" },
+    "position": ["attributive", "predicative"],
+    "translations": ["extensive", "comprehensive", "substantial"],
+    "tip": "Describes something large in scope. 'Eine umfangreiche Sammlung' = an extensive collection.",
+    "examples": ["Das ist ein umfangreiches Projekt.", "Er hat umfangreiche Erfahrung.", "Die Auswahl ist sehr umfangreich."]
   },
   {
-    "base": "vorteilhaft",
-    "level": "B2",
-    "comparison": {
-      "positive": "vorteilhaft",
-      "comparative": "vorteilhafter",
-      "superlative_predicative": "am vorteilhaftesten",
-      "superlative_attributive": "vorteilhafteste"
-    },
+    "base": "vorläufig", "level": "B2",
+    "comparison": { "positive": "vorläufig", "comparative": "vorläufiger", "superlative_predicative": "am vorläufigsten", "superlative_attributive": "vorläufigste" },
     "irregular": false,
-    "declension_examples": {
-      "strong": "vorteilhafter",
-      "weak": "vorteilhafte",
-      "mixed": "vorteilhafter"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "advantageous"
-    ],
-    "examples": [
-      "Das ist vorteilhaft.",
-      "Ein früher Termin ist vorteilhafter.",
-      "Am vorteilhaftesten ist Flexibilität."
-    ]
+    "declension_examples": { "strong": "vorläufiger (m)", "weak": "vorläufige (f)", "mixed": "vorläufiges (n)" },
+    "position": ["attributive", "predicative", "adverbial"],
+    "translations": ["provisional", "temporary", "preliminary"],
+    "tip": "Used for temporary measures or preliminary results. 'Vorläufig' as adverb = for the time being.",
+    "examples": ["Das ist eine vorläufige Lösung.", "Vorläufig bleibt alles beim Alten.", "Das sind vorläufige Ergebnisse."]
   },
   {
-    "base": "nachteilig",
-    "level": "B2",
-    "comparison": {
-      "positive": "nachteilig",
-      "comparative": "nachteiliger",
-      "superlative_predicative": "am nachteiligsten",
-      "superlative_attributive": "nachteiligste"
-    },
+    "base": "angemessen", "level": "B2",
+    "comparison": { "positive": "angemessen", "comparative": "angemessener", "superlative_predicative": "am angemessensten", "superlative_attributive": "angemessenste" },
     "irregular": false,
-    "declension_examples": {
-      "strong": "nachteiliger",
-      "weak": "nachteilige",
-      "mixed": "nachteiliger"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "disadvantageous"
-    ],
-    "examples": [
-      "Das kann nachteilig sein.",
-      "Späte Änderungen sind nachteiliger.",
-      "Am nachteiligsten ist fehlende Planung."
-    ]
+    "declension_examples": { "strong": "angemessener (m)", "weak": "angemessene (f)", "mixed": "angemessenes (n)" },
+    "position": ["attributive", "predicative", "adverbial"],
+    "translations": ["appropriate", "adequate", "reasonable"],
+    "tip": "From 'messen' (to measure) + 'an' — literally 'measured to'. Implies suitability for a situation.",
+    "examples": ["Das ist eine angemessene Reaktion.", "Der Lohn ist angemessen.", "Er hat sich angemessen verhalten."]
   },
   {
-    "base": "nachvollziehbar",
-    "level": "B2",
-    "comparison": {
-      "positive": "nachvollziehbar",
-      "comparative": "nachvollziehbarer",
-      "superlative_predicative": "am nachvollziehbarsten",
-      "superlative_attributive": "nachvollziehbarste"
-    },
+    "base": "überzeugend", "level": "B2",
+    "comparison": { "positive": "überzeugend", "comparative": "überzeugender", "superlative_predicative": "am überzeugendsten", "superlative_attributive": "überzeugendste" },
     "irregular": false,
-    "declension_examples": {
-      "strong": "nachvollziehbarer",
-      "weak": "nachvollziehbare",
-      "mixed": "nachvollziehbarer"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "understandable"
-    ],
-    "examples": [
-      "Die Begründung ist nachvollziehbar.",
-      "Sein Standpunkt wird nachvollziehbarer.",
-      "Am nachvollziehbarsten sind Beispiele."
-    ]
+    "declension_examples": { "strong": "überzeugender (m)", "weak": "überzeugende (f)", "mixed": "überzeugendes (n)" },
+    "position": ["attributive", "predicative", "adverbial"],
+    "translations": ["convincing", "persuasive"],
+    "tip": "Present participle used as adjective. 'Überzeugende Argumente' = convincing arguments.",
+    "examples": ["Das Argument ist überzeugend.", "Sie hat überzeugend gesprochen.", "Eine überzeugende Leistung."]
   },
   {
-    "base": "fraglich",
-    "level": "B2",
-    "comparison": {
-      "positive": "fraglich",
-      "comparative": "fraglicher",
-      "superlative_predicative": "am fraglichsten",
-      "superlative_attributive": "fraglichste"
-    },
+    "base": "eindeutig", "level": "B2",
+    "comparison": { "positive": "eindeutig", "comparative": "eindeutiger", "superlative_predicative": "am eindeutigsten", "superlative_attributive": "eindeutigste" },
     "irregular": false,
-    "declension_examples": {
-      "strong": "fraglicher",
-      "weak": "fragliche",
-      "mixed": "fraglicher"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "questionable"
-    ],
-    "examples": [
-      "Das ist fraglich.",
-      "Die Quelle ist fraglicher als gedacht.",
-      "Am fraglichsten ist die Statistik."
-    ]
+    "declension_examples": { "strong": "eindeutiger (m)", "weak": "eindeutige (f)", "mixed": "eindeutiges (n)" },
+    "position": ["attributive", "predicative", "adverbial"],
+    "translations": ["unambiguous", "clear", "definite"],
+    "tip": "From 'ein' (one) + 'deutig' (interpretable). Means something with only one clear meaning. Opposite: mehrdeutig (ambiguous).",
+    "examples": ["Das Ergebnis ist eindeutig.", "Er hat eine eindeutige Antwort gegeben.", "Das ist eindeutig falsch."]
   },
   {
-    "base": "kritisch",
-    "level": "B2",
-    "comparison": {
-      "positive": "kritisch",
-      "comparative": "kritischer",
-      "superlative_predicative": "am kritischsten",
-      "superlative_attributive": "kritischste"
-    },
+    "base": "vielfältig", "level": "B2",
+    "comparison": { "positive": "vielfältig", "comparative": "vielfältiger", "superlative_predicative": "am vielfältigsten", "superlative_attributive": "vielfältigste" },
     "irregular": false,
-    "declension_examples": {
-      "strong": "kritischer",
-      "weak": "kritische",
-      "mixed": "kritischer"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "critical"
-    ],
-    "examples": [
-      "Die Lage ist kritisch.",
-      "Die Situation wird kritischer.",
-      "Am kritischsten ist der Zeitplan.",
-      "Das Thema wird kritischer diskutiert."
-    ]
+    "declension_examples": { "strong": "vielfältiger (m)", "weak": "vielfältige (f)", "mixed": "vielfältiges (n)" },
+    "position": ["attributive", "predicative", "adverbial"],
+    "translations": ["diverse", "varied", "manifold"],
+    "tip": "Common in descriptions of culture, job offers, and projects. 'Vielfältige Möglichkeiten' = diverse possibilities.",
+    "examples": ["Das Angebot ist vielfältig.", "Er hat vielfältige Erfahrungen.", "Die Stadt ist kulturell vielfältig."]
   },
   {
-    "base": "geeignet",
-    "level": "B2",
-    "comparison": {
-      "positive": "geeignet",
-      "comparative": "geeigneter",
-      "superlative_predicative": "am geeignetsten",
-      "superlative_attributive": "geeignetste"
-    },
+    "base": "unvermeidlich", "level": "B2",
+    "comparison": { "positive": "unvermeidlich", "comparative": "unvermeidlicher", "superlative_predicative": "am unvermeidlichsten", "superlative_attributive": "unvermeidlichste" },
     "irregular": false,
-    "declension_examples": {
-      "strong": "geeigneter",
-      "weak": "geeignete",
-      "mixed": "geeigneter"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "suitable"
-    ],
-    "examples": [
-      "Das ist geeignet für Anfänger.",
-      "Eine ruhigere Umgebung ist geeigneter.",
-      "Am geeignetsten ist ein klarer Plan."
-    ],
-    "variants": [
-      {
-        "base": "ungeeignet",
-        "level": "b2",
-        "type": "negation",
-        "prefix": "un",
-        "translations": [
-          "unsuitable"
-        ]
-      }
-    ]
+    "declension_examples": { "strong": "unvermeidlicher (m)", "weak": "unvermeidliche (f)", "mixed": "unvermeidliches (n)" },
+    "position": ["attributive", "predicative", "adverbial"],
+    "translations": ["inevitable", "unavoidable"],
+    "tip": "Prefix 'un-' + 'vermeidlich' (avoidable from 'vermeiden'). 'Das war unvermeidlich' = That was inevitable.",
+    "examples": ["Das war unvermeidlich.", "Ein unvermeidlicher Konflikt.", "Der Wandel ist unvermeidlich."]
   },
   {
-    "base": "ungeeignet",
-    "level": "B2",
-    "comparison": {
-      "positive": "ungeeignet",
-      "comparative": "ungeeigneter",
-      "superlative_predicative": "am ungeeignetsten",
-      "superlative_attributive": "ungeeignetste"
-    },
+    "base": "strittig", "level": "B2",
+    "comparison": { "positive": "strittig", "comparative": "strittiger", "superlative_predicative": "am strittigsten", "superlative_attributive": "strittigste" },
     "irregular": false,
-    "declension_examples": {
-      "strong": "ungeeigneter",
-      "weak": "ungeeignete",
-      "mixed": "ungeeigneter"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "unsuitable"
-    ],
-    "examples": [
-      "Das ist ungeeignet.",
-      "Der Raum ist ungeeigneter als gedacht.",
-      "Am ungeeignetsten ist Lärm beim Lernen."
-    ],
-    "derived_from": {
-      "base": "geeignet",
-      "level": "b2",
-      "type": "negation",
-      "prefix": "un"
-    }
-  },
-  {
-    "base": "verfügbar",
-    "level": "B2",
-    "comparison": {
-      "positive": "verfügbar",
-      "comparative": "verfügbarer",
-      "superlative_predicative": "am verfügbarsten",
-      "superlative_attributive": "verfügbarste"
-    },
-    "irregular": true,
-    "declension_examples": {
-      "strong": "verfügbarer",
-      "weak": "verfügbare",
-      "mixed": "verfügbarer"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "available"
-    ],
-    "examples": [
-      "Der Termin ist verfügbar.",
-      "Online ist mehr verfügbar.",
-      "Am verfügbarsten bin ich am Freitag."
-    ]
-  },
-  {
-    "base": "verbindlich",
-    "level": "B2",
-    "comparison": {
-      "positive": "verbindlich",
-      "comparative": "verbindlicher",
-      "superlative_predicative": "am verbindlichsten",
-      "superlative_attributive": "verbindlichste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "verbindlicher",
-      "weak": "verbindliche",
-      "mixed": "verbindlicher"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "binding",
-      "formal"
-    ],
-    "examples": [
-      "Wir brauchen eine verbindliche Zusage.",
-      "Seine Antwort war verbindlicher.",
-      "Am verbindlichsten ist ein Vertrag."
-    ],
-    "variants": [
-      {
-        "base": "unverbindlich",
-        "level": "b2",
-        "type": "negation",
-        "prefix": "un",
-        "translations": [
-          "non-binding",
-          "informal"
-        ]
-      }
-    ]
-  },
-  {
-    "base": "unverbindlich",
-    "level": "B2",
-    "comparison": {
-      "positive": "unverbindlich",
-      "comparative": "unverbindlicher",
-      "superlative_predicative": "am unverbindlichsten",
-      "superlative_attributive": "unverbindlichste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "unverbindlicher",
-      "weak": "unverbindliche",
-      "mixed": "unverbindlicher"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "non-binding",
-      "informal"
-    ],
-    "examples": [
-      "Das ist unverbindlich.",
-      "Die Nachricht klingt unverbindlicher.",
-      "Am unverbindlichsten sind Gerüchte."
-    ],
-    "derived_from": {
-      "base": "verbindlich",
-      "level": "b2",
-      "type": "negation",
-      "prefix": "un"
-    }
-  },
-  {
-    "base": "rechtzeitig",
-    "level": "B2",
-    "comparison": {
-      "positive": "rechtzeitig",
-      "comparative": "rechtzeitiger",
-      "superlative_predicative": "am rechtzeitigsten",
-      "superlative_attributive": "rechtzeitigste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "rechtzeitiger",
-      "weak": "rechtzeitige",
-      "mixed": "rechtzeitiger"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "on time",
-      "timely"
-    ],
-    "examples": [
-      "Bitte komm rechtzeitig.",
-      "Rechtzeitige Planung hilft.",
-      "Am rechtzeitigsten ist eine Erinnerung."
-    ]
-  },
-  {
-    "base": "fristgerecht",
-    "level": "B2",
-    "comparison": {
-      "positive": "fristgerecht",
-      "comparative": "fristgerechter",
-      "superlative_predicative": "am fristgerechtesten",
-      "superlative_attributive": "fristgerechteste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "fristgerechter",
-      "weak": "fristgerechte",
-      "mixed": "fristgerechter"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "within the deadline"
-    ],
-    "examples": [
-      "Die Kündigung ist fristgerecht.",
-      "Fristgerechte Abgabe ist wichtig.",
-      "Am fristgerechtesten ist Online-Abgabe."
-    ]
-  },
-  {
-    "base": "dringend",
-    "level": "B2",
-    "comparison": {
-      "positive": "dringend",
-      "comparative": "dringender",
-      "superlative_predicative": "am dringendsten",
-      "superlative_attributive": "dringendste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "dringender",
-      "weak": "dringende",
-      "mixed": "dringender"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "urgent"
-    ],
-    "examples": [
-      "Das ist dringend.",
-      "Ich brauche dringend Hilfe.",
-      "Am dringendsten ist das Problem heute."
-    ]
-  },
-  {
-    "base": "überflüssig",
-    "level": "B2",
-    "comparison": {
-      "positive": "überflüssig",
-      "comparative": "überflüssiger",
-      "superlative_predicative": "am überflüssigsten",
-      "superlative_attributive": "überflüssigste"
-    },
-    "irregular": true,
-    "declension_examples": {
-      "strong": "überflüssiger",
-      "weak": "überflüssige",
-      "mixed": "überflüssiger"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "unnecessary",
-      "superfluous"
-    ],
-    "examples": [
-      "Das ist überflüssig.",
-      "Noch ein Meeting ist überflüssiger.",
-      "Am überflüssigsten sind doppelte Regeln."
-    ]
-  },
-  {
-    "base": "umfangreich",
-    "level": "B2",
-    "comparison": {
-      "positive": "umfangreich",
-      "comparative": "umfangreicher",
-      "superlative_predicative": "am umfangreichsten",
-      "superlative_attributive": "umfangreichste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "umfangreicher",
-      "weak": "umfangreiche",
-      "mixed": "umfangreicher"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "extensive"
-    ],
-    "examples": [
-      "Die Unterlagen sind umfangreich.",
-      "Der Bericht ist umfangreicher.",
-      "Am umfangreichsten ist das Kapitel drei."
-    ]
-  },
-  {
-    "base": "verantwortlich",
-    "level": "B2",
-    "comparison": {
-      "positive": "verantwortlich",
-      "comparative": "verantwortlicher",
-      "superlative_predicative": "am verantwortlichsten",
-      "superlative_attributive": "verantwortlichste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "verantwortlicher",
-      "weak": "verantwortliche",
-      "mixed": "verantwortlicher"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "responsible"
-    ],
-    "examples": [
-      "Wer ist verantwortlich?",
-      "Er handelt verantwortlicher.",
-      "Am verantwortlichsten ist die Leitung."
-    ]
-  },
-  {
-    "base": "zuversichtlich",
-    "level": "B2",
-    "comparison": {
-      "positive": "zuversichtlich",
-      "comparative": "zuversichtlicher",
-      "superlative_predicative": "am zuversichtlichsten",
-      "superlative_attributive": "zuversichtlichste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "zuversichtlicher",
-      "weak": "zuversichtliche",
-      "mixed": "zuversichtlicher"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "confident",
-      "optimistic"
-    ],
-    "examples": [
-      "Ich bin zuversichtlich.",
-      "Sie wirkt zuversichtlicher.",
-      "Am zuversichtlichsten bin ich nach dem Training."
-    ]
-  },
-  {
-    "base": "skeptisch",
-    "level": "B2",
-    "comparison": {
-      "positive": "skeptisch",
-      "comparative": "skeptischer",
-      "superlative_predicative": "am skeptischsten",
-      "superlative_attributive": "skeptischste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "skeptischer",
-      "weak": "skeptische",
-      "mixed": "skeptischer"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "skeptical"
-    ],
-    "examples": [
-      "Ich bin skeptisch.",
-      "Er wird skeptischer.",
-      "Am skeptischsten bin ich bei Versprechen."
-    ]
-  },
-  {
-    "base": "transparent",
-    "level": "B2",
-    "comparison": {
-      "positive": "transparent",
-      "comparative": "transparenter",
-      "superlative_predicative": "am transparentesten",
-      "superlative_attributive": "transparenteste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "transparenter",
-      "weak": "transparente",
-      "mixed": "transparenter"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "transparent"
-    ],
-    "examples": [
-      "Der Prozess ist transparent.",
-      "Transparente Regeln helfen.",
-      "Am transparentesten sind offene Daten."
-    ]
-  },
-  {
-    "base": "umständlich",
-    "level": "B2",
-    "comparison": {
-      "positive": "umständlich",
-      "comparative": "umständlicher",
-      "superlative_predicative": "am umständlichsten",
-      "superlative_attributive": "umständlichste"
-    },
-    "irregular": true,
-    "declension_examples": {
-      "strong": "umständlicher",
-      "weak": "umständliche",
-      "mixed": "umständlicher"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "cumbersome",
-      "transparent",
-      "clear"
-    ],
-    "examples": [
-      "Das ist umständlich.",
-      "Der Antrag ist umständlicher.",
-      "Am umständlichsten ist der Papierkram.",
-      "Der Prozess ist transparent.",
-      "Wir brauchen transparentere Regeln.",
-      "Am transparentesten sind offene Daten."
-    ]
-  },
-  {
-    "base": "zweckmäßig",
-    "level": "B2",
-    "comparison": {
-      "positive": "zweckmäßig",
-      "comparative": "zweckmäßiger",
-      "superlative_predicative": "am zweckmäßigsten",
-      "superlative_attributive": "zweckmäßigste"
-    },
-    "irregular": true,
-    "declension_examples": {
-      "strong": "zweckmäßiger",
-      "weak": "zweckmäßige",
-      "mixed": "zweckmäßiger"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "practical",
-      "expedient"
-    ],
-    "examples": [
-      "Das ist zweckmäßig.",
-      "Eine Liste ist zweckmäßiger.",
-      "Am zweckmäßigsten ist eine Checkliste."
-    ]
-  },
-  {
-    "base": "wirtschaftlich",
-    "level": "B2",
-    "comparison": {
-      "positive": "wirtschaftlich",
-      "comparative": "wirtschaftlicher",
-      "superlative_predicative": "am wirtschaftlichsten",
-      "superlative_attributive": "wirtschaftlichste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "wirtschaftlicher",
-      "weak": "wirtschaftliche",
-      "mixed": "wirtschaftlicher"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "economical",
-      "economic"
-    ],
-    "examples": [
-      "Das ist wirtschaftlich sinnvoll.",
-      "Die Lösung ist wirtschaftlicher.",
-      "Am wirtschaftlichsten ist Reparieren."
-    ]
-  },
-  {
-    "base": "umweltfreundlich",
-    "level": "B2",
-    "comparison": {
-      "positive": "umweltfreundlich",
-      "comparative": "umweltfreundlicher",
-      "superlative_predicative": "am umweltfreundlichsten",
-      "superlative_attributive": "umweltfreundlichste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "umweltfreundlicher",
-      "weak": "umweltfreundliche",
-      "mixed": "umweltfreundlicher"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "environmentally friendly"
-    ],
-    "examples": [
-      "Das ist umweltfreundlich.",
-      "Bahnfahren ist umweltfreundlicher.",
-      "Am umweltfreundlichsten ist Radfahren."
-    ]
-  },
-  {
-    "base": "nachhaltig",
-    "level": "B2",
-    "comparison": {
-      "positive": "nachhaltig",
-      "comparative": "nachhaltiger",
-      "superlative_predicative": "am nachhaltigsten",
-      "superlative_attributive": "nachhaltigste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "nachhaltiger",
-      "weak": "nachhaltige",
-      "mixed": "nachhaltiger"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "sustainable"
-    ],
-    "examples": [
-      "Wir brauchen nachhaltige Lösungen.",
-      "Die Wirkung ist nachhaltiger.",
-      "Am nachhaltigsten ist weniger Verbrauch."
-    ]
-  },
-  {
-    "base": "unzuverlässig",
-    "level": "B2",
-    "comparison": {
-      "positive": "unzuverlässig",
-      "comparative": "unzuverlässiger",
-      "superlative_predicative": "am unzuverlässigsten",
-      "superlative_attributive": "unzuverlässigste"
-    },
-    "irregular": true,
-    "declension_examples": {
-      "strong": "unzuverlässiger",
-      "weak": "unzuverlässige",
-      "mixed": "unzuverlässiger"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "unreliable"
-    ],
-    "examples": [
-      "Das System ist unzuverlässig.",
-      "Die Verbindung ist unzuverlässiger.",
-      "Am unzuverlässigsten ist das alte Gerät."
-    ]
-  },
-  {
-    "base": "angemessen",
-    "level": "B2",
-    "comparison": {
-      "positive": "angemessen",
-      "comparative": "angemessener",
-      "superlative_predicative": "am angemessensten",
-      "superlative_attributive": "angemessenste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "angemessener",
-      "weak": "angemessene",
-      "mixed": "angemessener"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "appropriate",
-      "sustainable",
-      "lasting"
-    ],
-    "examples": [
-      "Das ist angemessen.",
-      "Eine angemessenere Reaktion hilft.",
-      "Am angemessensten ist ein ruhiger Ton.",
-      "Wir brauchen nachhaltige Lösungen.",
-      "Die Wirkung ist nachhaltiger als gedacht.",
-      "Am nachhaltigsten ist weniger Konsum."
-    ],
-    "variants": [
-      {
-        "base": "unangemessen",
-        "level": "b2",
-        "type": "negation",
-        "prefix": "un",
-        "translations": [
-          "inappropriate"
-        ]
-      }
-    ]
-  },
-  {
-    "base": "unangemessen",
-    "level": "B2",
-    "comparison": {
-      "positive": "unangemessen",
-      "comparative": "unangemessener",
-      "superlative_predicative": "am unangemessensten",
-      "superlative_attributive": "unangemessenste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "unangemessener",
-      "weak": "unangemessene",
-      "mixed": "unangemessener"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "inappropriate"
-    ],
-    "examples": [
-      "Das war unangemessen.",
-      "Der Kommentar war unangemessener.",
-      "Am unangemessensten ist es im Meeting."
-    ],
-    "derived_from": {
-      "base": "angemessen",
-      "level": "b2",
-      "type": "negation",
-      "prefix": "un"
-    }
-  },
-  {
-    "base": "unvermeidlich",
-    "level": "B2",
-    "comparison": {
-      "positive": "unvermeidlich",
-      "comparative": "unvermeidlicher",
-      "superlative_predicative": "am unvermeidlichsten",
-      "superlative_attributive": "unvermeidlichste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "unvermeidlicher",
-      "weak": "unvermeidliche",
-      "mixed": "unvermeidlicher"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "inevitable"
-    ],
-    "examples": [
-      "Fehler sind manchmal unvermeidlich.",
-      "Der Konflikt wurde unvermeidlicher.",
-      "Am unvermeidlichsten ist Stress ohne Pausen."
-    ]
-  },
-  {
-    "base": "optional",
-    "level": "B2",
-    "comparison": {
-      "positive": "optional",
-      "comparative": "optionaler",
-      "superlative_predicative": "am optionalsten",
-      "superlative_attributive": "optionalste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "optionaler",
-      "weak": "optionale",
-      "mixed": "optionaler"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "optional",
-      "appropriate"
-    ],
-    "examples": [
-      "Das Feld ist optional.",
-      "Optionaler Zusatz kostet extra.",
-      "Am optionalsten ist das Zubehör.",
-      "Das ist angemessen.",
-      "Eine angemessenere Reaktion wäre besser gewesen.",
-      "Am angemessensten ist ein ruhiges Gespräch."
-    ]
-  },
-  {
-    "base": "erforderlich",
-    "level": "B2",
-    "comparison": {
-      "positive": "erforderlich",
-      "comparative": "erforderlicher",
-      "superlative_predicative": "am erforderlichsten",
-      "superlative_attributive": "erforderlichste"
-    },
-    "irregular": false,
-    "declension_examples": {
-      "strong": "erforderlicher",
-      "weak": "erforderliche",
-      "mixed": "erforderlicher"
-    },
-    "position": [
-      "attributive",
-      "predicative",
-      "adverbial"
-    ],
-    "translations": [
-      "required",
-      "necessary"
-    ],
-    "examples": [
-      "Ein Pass ist erforderlich.",
-      "Erforderliche Unterlagen fehlen.",
-      "Am erforderlichsten ist ein Ausweis."
-    ]
+    "declension_examples": { "strong": "strittiger (m)", "weak": "strittige (f)", "mixed": "strittiges (n)" },
+    "position": ["attributive", "predicative"],
+    "translations": ["controversial", "disputed", "contentious"],
+    "tip": "Used for topics, issues, or points that are disputed. Synonym: umstritten (more common). 'Das ist strittig' = That is disputed.",
+    "examples": ["Das ist ein strittiger Punkt.", "Die Frage ist strittig.", "Strittige Themen sollte man diplomatisch ansprechen."]
   }
 ];
 export default adjectivesB2;
